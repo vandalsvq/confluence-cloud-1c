@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<Enum uuid="90482a22-0b5f-45fc-b136-e542a3043479">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.confluence_ТипыДанных" category="Ref">
+				<xr:TypeId>fb8ef1ea-2f32-4a63-b99c-3ae96b7fa517</xr:TypeId>
+				<xr:ValueId>267420db-8a6b-41ed-9708-82a036bf7eda</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.confluence_ТипыДанных" category="Manager">
+				<xr:TypeId>c7eedf93-2164-40eb-ab23-4a3f83ff9959</xr:TypeId>
+				<xr:ValueId>e672c849-f148-4b01-be80-e5b473ac6cb0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.confluence_ТипыДанных" category="List">
+				<xr:TypeId>c354aceb-0150-4c96-bc42-66b17ce36649</xr:TypeId>
+				<xr:ValueId>906fedbc-a079-4062-bf3e-f96fbd3eec01</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>confluence_ТипыДанных</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Confluence типы данных</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="af11a169-287f-4f19-b414-70a4daf75b35">
+				<Properties>
+					<Name>Статья</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>page</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b5446243-a6a5-48a2-89be-a9e157b2b4b9">
+				<Properties>
+					<Name>ЗаписьБлога</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись блога</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>blogpost</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="37c6d548-7736-4a58-a9d8-7855aafe3a5e">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>comment</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="586de065-cd9f-4813-827d-12a315c5fb15">
+				<Properties>
+					<Name>Вложение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вложение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>attachment</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7964e3bb-7c43-451d-acde-73bebd76c91d">
+				<Properties>
+					<Name>Пространство</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пространство</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
