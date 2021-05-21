@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="АдресСервера" id="35">
+			<DataPath>Объект.АдресСервера</DataPath>
+			<ContextMenu name="АдресСервераКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="АдресСервераРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<Pages name="ОсновнаяПанель" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ОсновнаяПанельРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Page name="ГруппаПространства" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пространства</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа пространства</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПространстваРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<Table name="Пространства" id="1">
+							<Representation>List</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Пространства</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПространстваКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ПространстваКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="ПространстваОбновитьПространства" id="38">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьПространства</CommandName>
+										<ExtendedTooltip name="ПространстваОбновитьПространстваРасширеннаяПодсказка" id="39"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПространстваРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ПространстваСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>Пространства</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПространстваСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ПространстваСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПространстваСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>Пространства</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПространстваСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ПространстваСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПространстваУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>Пространства</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПространстваУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ПространстваУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ПространстваПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ПространстваИдентификатор" id="14">
+									<DataPath>Пространства.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПространстваИдентификаторКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ПространстваИдентификаторРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ПространстваКлюч" id="17">
+									<DataPath>Пространства.Ключ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПространстваКлючКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ПространстваКлючРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ПространстваНаименование" id="20">
+									<DataPath>Пространства.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПространстваНаименованиеКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ПространстваНаименованиеРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="ПространстваОписание" id="23">
+									<DataPath>Пространства.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПространстваОписаниеКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ПространстваОписаниеРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ПространстваСсылкаПросмотр" id="26">
+									<DataPath>Пространства.СсылкаПросмотр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПространстваСсылкаПросмотрКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ПространстваСсылкаПросмотрРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ПространстваДомашняяСтраницаИдентификатор" id="91">
+									<DataPath>Пространства.ДомашняяСтраницаИдентификатор</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница ИД</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПространстваДомашняяСтраницаИдентификаторКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="ПространстваДомашняяСтраницаИдентификаторРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<CheckBoxField name="ПространстваОбщее" id="29">
+									<DataPath>Пространства.Общее</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПространстваОбщееКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ПространстваОбщееРасширеннаяПодсказка" id="31"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПространстваДействующее" id="32">
+									<DataPath>Пространства.Действующее</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПространстваДействующееКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ПространстваДействующееРасширеннаяПодсказка" id="34"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницы" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="РодительИД" id="86">
+							<DataPath>Items.Пространства.CurrentData.ДомашняяСтраницаИдентификатор</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страница ИД</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="РодительИДКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="РодительИДРасширеннаяПодсказка" id="88"/>
+						</InputField>
+						<Table name="Страницы" id="49">
+							<Representation>Tree</Representation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Страницы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СтраницыКонтекстноеМеню" id="50"/>
+							<AutoCommandBar name="СтраницыКоманднаяПанель" id="51">
+								<ChildItems>
+									<Button name="СтраницыОбновитьСтраницы" id="89">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьСтраницы</CommandName>
+										<ExtendedTooltip name="СтраницыОбновитьСтраницыРасширеннаяПодсказка" id="90"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="52"/>
+							<SearchStringAddition name="СтраницыСтрокаПоиска" id="53">
+								<AdditionSource>
+									<Item>Страницы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтраницыСтрокаПоискаКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="СтраницыСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтраницыСостояниеПросмотра" id="56">
+								<AdditionSource>
+									<Item>Страницы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтраницыСостояниеПросмотраКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="СтраницыСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтраницыУправлениеПоиском" id="59">
+								<AdditionSource>
+									<Item>Страницы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтраницыУправлениеПоискомКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="СтраницыУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СтраницыИдентификатор" id="62">
+									<DataPath>Страницы.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыИдентификаторКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="СтраницыИдентификаторРасширеннаяПодсказка" id="64"/>
+								</InputField>
+								<InputField name="СтраницыТипДанных" id="65">
+									<DataPath>Страницы.ТипДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыТипДанныхКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="СтраницыТипДанныхРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="СтраницыЗаголовок" id="68">
+									<DataPath>Страницы.Заголовок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыЗаголовокКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="СтраницыЗаголовокРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="СтраницыСтатус" id="71">
+									<DataPath>Страницы.Статус</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыСтатусКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="СтраницыСтатусРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<CheckBoxField name="СтраницыЕстьПодчиненные" id="94">
+									<DataPath>Страницы.ЕстьПодчиненные</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтраницыЕстьПодчиненныеКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="СтраницыЕстьПодчиненныеРасширеннаяПодсказка" id="96"/>
+								</CheckBoxField>
+								<InputField name="СтраницыПространствоКлюч" id="77">
+									<DataPath>Страницы.ПространствоКлюч</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыПространствоКлючКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СтраницыПространствоКлючРасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="СтраницыВерсияНомер" id="80">
+									<DataPath>Страницы.ВерсияНомер</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыВерсияНомерКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="СтраницыВерсияНомерРасширеннаяПодсказка" id="82"/>
+								</InputField>
+								<InputField name="СтраницыСсылкаПросмотр" id="83">
+									<DataPath>Страницы.СсылкаПросмотр</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СтраницыСсылкаПросмотрКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="СтраницыСсылкаПросмотрРасширеннаяПодсказка" id="85"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<HTMLDocumentField name="ПолеHTML" id="40">
+			<DataPath>ПолеHTML</DataPath>
+			<ContextMenu name="ПолеHTMLКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ПолеHTMLРасширеннаяПодсказка" id="42"/>
+			<Events>
+				<Event name="OnClick">ПолеHTMLПриНажатии</Event>
+			</Events>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.confluence_Навигатор</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Пространства" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пространства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Идентификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ключ" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СсылкаПросмотр" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка просмотр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Общее" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Действующее" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действующее</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Метки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Метки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueTable</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДомашняяСтраницаИдентификатор" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Домашняя страница идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<AdditionalColumns table="Пространства.Метки">
+					<Column name="Префикс" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Префикс</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>20</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Представление" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Представление</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>250</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Идентификатор" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Идентификатор</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>40</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Метка" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Метка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>20</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПолеHTML" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Страницы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Идентификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипДанных" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.confluence_ТипыДанных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Заголовок" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Статус" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПространствоКлюч" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пространство ключ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВерсияНомер" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="СсылкаПросмотр" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка просмотр</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьПодчиненные" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть подчиненные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьПространства" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить пространства</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить пространства</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПространства</Action>
+		</Command>
+		<Command name="ОбновитьСтраницы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСтраницы</Action>
+		</Command>
+	</Commands>
+</Form>
