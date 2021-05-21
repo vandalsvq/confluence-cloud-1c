@@ -73,6 +73,7 @@
 			<Enum>confluence_ТипыДанных</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
 			<DataProcessor>confluence_Навигатор</DataProcessor>
+			<DataProcessor>confluence_Демо</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

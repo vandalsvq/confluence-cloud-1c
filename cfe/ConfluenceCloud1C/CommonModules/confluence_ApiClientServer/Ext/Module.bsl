@@ -1,4 +1,103 @@
 ﻿
+#Область future_methods
+
+// https://github.com/atlassian-api/atlassian-python-api
+
+//	page_exists(self, space, title)
+//	get_child_title_list(self, page_id, type="page", start=None, limit=None)
+//	get_child_id_list(self, page_id, type="page", start=None, limit=None)
+//	get_page_id(self, space, title)
+//	get_parent_content_id(self, page_id)
+//	get_parent_content_title(self, page_id)
+//	get_page_space(self, page_id)
+//	get_pages_by_title(self, space, title, start=0, limit=200, expand=None)
+//	get_page_by_title(self, space, title, start=0, limit=1, expand=None)
+//	get_page_by_id(self, page_id, expand=None, status=None, version=None)
+//	get_page_labels(self, page_id, prefix=None, start=None, limit=None)
+//	get_page_comments(self, content_id, expand=None, parent_version=None, start=0, limit=25, location=None, depth=None)
+//	get_draft_page_by_id(self, page_id, status="draft")
+//	get_all_pages_by_label(self, label, start=0, limit=50)
+//	get_all_pages_from_space_trash(self, space, start=0, limit=500, status="trashed", content_type="page")
+//	get_all_draft_pages_from_space(self, space, start=0, limit=500, status="draft")
+//	get_all_draft_pages_from_space_through_cql(self, space, start=0, limit=500, status="draft")
+//	get_all_restrictions_for_content(self, content_id)
+//	remove_page_from_trash(self, page_id)
+//	remove_page_as_draft(self, page_id)
+//	remove_content(self, content_id)
+//	remove_page(self, page_id, status=None, recursive=False)
+//	create_page(self, space, title, body, parent_id=None, type="page", representation="storage", editor=None)
+//	move_page(self, space_key, page_id, target_id=None, target_title=None, position="append")
+//	create_or_update_template(self, name, body, template_type="page", template_id=None, description=None, labels=None, space=None)
+//	get_content_template(self, template_id)
+//	get_blueprint_templates(self, space=None, start=0, limit=None, expand=None)
+//	get_content_templates(self, space=None, start=0, limit=None, expand=None)
+//	remove_template(self, template_id)
+//	add_comment(self, page_id, text)
+//	attach_content(self, content, name, content_type="application/binary", page_id=None, title=None, space=None, comment=None)
+//	def attach_file(self, filename, name=None, content_type=None, page_id=None, title=None, space=None, comment=None)
+//	delete_attachment(self, page_id, filename, version=None)
+//	delete_attachment_by_id(self, attachment_id, version)
+//	remove_page_attachment_keep_version(self, page_id, filename, keep_last_versions)
+//	get_attachment_history(self, attachment_id, limit=200, start=0)
+//	get_attachments_from_content(self, page_id, start=0, limit=50, expand=None, filename=None, media_type=None)
+//	set_page_label(self, page_id, label)
+//	remove_page_label(self, page_id, label)
+//	history(self, page_id)
+//	get_content_history(self, content_id)
+//	get_content_history_by_version_number(self, content_id, version_number)
+//	remove_content_history(self, page_id, version_number)
+//	remove_page_history(self, page_id, version_number)
+//	remove_content_history_in_cloud(self, page_id, version_id)
+//	remove_page_history_keep_version(self, page_id, keep_last_versions)
+//	has_unknown_attachment_error(self, page_id)
+//	is_page_content_is_already_updated(self, page_id, body, title=None)
+//	update_existing_page(self, page_id, title, body, type="page", representation="storage", minor_edit=False, version_comment=None)
+//	update_page(self, page_id, title, body=None, parent_id=None, type="page", representation="storage", minor_edit=False, version_comment=None, always_update=False)
+//	_insert_to_existing_page(self, page_id, title, insert_body, parent_id=None, type="page", representation="storage", minor_edit=False, version_comment=None, top_of_page=False)
+//	append_page(self, page_id, title, append_body, parent_id=None, type="page", representation="storage", minor_edit=False)
+//	prepend_page(self, page_id, title, prepend_body, parent_id=None, type="page", representation="storage", minor_edit=False)
+//	update_or_create(self, parent_id, title, body, representation="storage", minor_edit=False, version_comment=None, editor=None)
+//	convert_wiki_to_storage(self, wiki)
+//	set_page_property(self, page_id, data)
+//	update_page_property(self, page_id, data)
+//	delete_page_property(self, page_id, page_property)
+//	get_page_property(self, page_id, page_property_key)
+//	get_page_properties(self, page_id)
+//	get_page_ancestors(self, page_id)
+//	clean_all_caches(self)
+//	clean_package_cache(self, cache_name="com.gliffy.cache.gon")
+//	get_all_groups(self, start=0, limit=1000)
+//	get_group_members(self, group_name="confluence-users", start=0, limit=1000, expand=None)
+//	get_all_members(self, group_name="confluence-users", expand=None)
+//	get_space(self, space_key, expand="description.plain,homepage", params=None)
+//	get_space_content(self, space_key, depth="all", start=0, limit=500, content_type=None, expand="body.storage")
+//	get_home_page_of_space(self, space_key)
+//	create_space(self, space_key, space_name)
+//	delete_space(self, space_key)
+//	get_space_property(self, space_key, expand=None)
+//	get_user_details_by_username(self, username, expand=None)
+//	get_user_details_by_userkey(self, userkey, expand=None)
+//	cql(self, cql, start=0, limit=None, expand=None, include_archived_spaces=None, excerpt=None)
+//	get_page_as_pdf(self, page_id)
+//	get_page_as_word(self, page_id)
+//	export_page(self, page_id)
+//	get_descendant_page_id(self, space, parent_id, title)
+//	reindex(self)
+//	reindex_get_status(self)
+//	health_check(self)
+//	synchrony_enable(self)
+//	synchrony_disable(self)
+//	check_access_mode(self)
+//	anonymous(self)
+//	upload_plugin(self, plugin_path)
+//	delete_plugin(self, plugin_key)
+//	check_long_tasks_result(self, start=None, limit=None, expand=None)
+//	check_long_task_result(self, task_id, expand=None)
+//	get_pdf_download_url_for_confluence_cloud(self, url)
+//	audit(self, start_date=None, end_date=None, start=None, limit=None, search_string=None)
+
+#КонецОбласти 
+
 #Область ПрограммныйИнтерфейс_Общий
  
 // Возвращает структуру настроек подключения
@@ -136,7 +235,7 @@
 	СтрокаПараметры = ПараметрыЗапроса_get_all_pages_from_space(ПараметрыЗапроса);
 	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "type", "page");
 	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "spaceKey", КлючПространства);
-	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "expand", "description.view,version,ancestors,space");
+	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "expand", ПолучитьНастройкуСодержимогоКонтента());
 	
 	ТекстЗапроса = "/wiki/rest/api/content?" + СтрокаПараметры;
 	
@@ -155,7 +254,7 @@
 	Возврат Структура_contentarray(ДанныеОтвета, Настройки);
 КонецФункции
 
-// Возвращает все подчиненные страницы по родителю
+// Возвращает подчиненные данные по родителю и типу
 //
 // Параметры:
 //	Настройки			- Структура - см. get_connection_settings
@@ -168,7 +267,7 @@
 // 
 Функция get_page_child_by_type(знач Настройки, знач РодительИД, знач ТипДанных, знач ПараметрыЗапроса = Неопределено) Экспорт
 	СтрокаПараметры = ПараметрыЗапроса_get_page_child_by_type(ПараметрыЗапроса);
-	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "expand", "description.view,version,ancestors,space");
+	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "expand", ПолучитьНастройкуСодержимогоКонтента());
 	ТипКонтента		= ТипДанныхВСтрокуConfluence(ТипДанных);
 	
 	ТекстЗапроса = СтрШаблон("/wiki/rest/api/content/%1/child/%2?%3", РодительИД, ТипКонтента, СтрокаПараметры);
@@ -186,6 +285,91 @@
 	
 	ДанныеОтвета = СоответствиеИзОтвета(ОтветHTTP);
 	Возврат Структура_contentarray(ДанныеОтвета, Настройки);
+КонецФункции
+
+// Возвращает все подчиненные статьи по родителю
+//
+// Параметры:
+//	Настройки			- Структура - см. get_connection_settings
+//	РодительИД			- Строка - идентификатор родителя
+//
+// Возвращаемое значение:
+//   Структура - type = contentarray
+// 
+Функция get_child_pages(знач Настройки, знач РодительИД) Экспорт
+	ТипСтатья = ПредопределенноеЗначение("Перечисление.confluence_ТипыДанных.Статья");
+	Возврат get_page_child_by_type(Настройки, РодительИД, ТипСтатья);
+КонецФункции
+
+// Возвращает контент страницы по ее идентификатору
+// При этом структура данных содержит заполненный реквизит body_storage
+//
+// Параметры:
+//	Настройки	- Структура - см. get_connection_settings
+//	СтраницаИД	- Строка - идентификатор страницы
+//
+// Возвращаемое значение:
+//   Структура - type = content
+// 
+Функция get_page_content(знач Настройки, знач СтраницаИД) Экспорт
+	СтрокаПараметры = "";
+	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "expand", ПолучитьНастройкуСодержимогоКонтента() + ",body.storage");
+	
+	ТекстЗапроса = СтрШаблон("/wiki/rest/api/content/%1?%2", СтраницаИД, СтрокаПараметры);
+	
+	#Область ЗапросHTTP
+	ЗаголовкиHTTP	= ПолучитьЗаголовки(Настройки);
+	ЗапросHTTP		= Новый HTTPЗапрос(ТекстЗапроса, ЗаголовкиHTTP);
+	СоединениеHTTP	= ПолучитьСоединениеHTTP(Настройки);
+	#КонецОбласти 
+	
+	ОтветHTTP = СоединениеHTTP.Получить(ЗапросHTTP);
+	Если ОтветHTTP.КодСостояния <> 200 Тогда
+		Возврат Структура_error(ОтветHTTP, НСтр("ru='Получение контента страницы.'"));
+	КонецЕсли;
+	
+	ДанныеОтвета = СоответствиеИзОтвета(ОтветHTTP);
+	Возврат Структура_content(ДанныеОтвета, Настройки);
+КонецФункции
+
+// Выполняет конвертацию страницы в HTML код
+//
+// Параметры:
+//	Настройки			- Структура - см. get_connection_settings
+//	СтруктураContent	- Структура - type = content
+//
+// Возвращаемое значение:
+//   Строка
+// 
+Функция convert_storage_to_view(знач Настройки, знач СтруктураContent) Экспорт
+	СтрокаПараметры = "";
+	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "spaceKeyContext", СтруктураContent.Пространство.Ключ);
+	СтрокаПараметры = ДополнитьПараметрыЗапроса(СтрокаПараметры, "contentIdContext", СтруктураContent.Идентификатор);
+	
+	ТекстЗапроса = "/wiki/rest/api/contentbody/convert/styled_view?" + СтрокаПараметры;
+	
+	#Область СтрокаJSON
+	СтруктураДанных = Новый Структура;
+	СтруктураДанных.Вставить("value"			, СтруктураContent.body_storage);
+	СтруктураДанных.Вставить("representation"	, "storage");
+	
+	СтрокаJSON = ПолучитьСтрокуJSON(СтруктураДанных);
+	#КонецОбласти 
+	
+	#Область ЗапросHTTP
+	ЗаголовкиHTTP	= ПолучитьЗаголовки(Настройки);
+	ЗапросHTTP		= Новый HTTPЗапрос(ТекстЗапроса, ЗаголовкиHTTP);
+	ЗапросHTTP.УстановитьТелоИзСтроки(СтрокаJSON);
+	СоединениеHTTP	= ПолучитьСоединениеHTTP(Настройки);
+	#КонецОбласти 
+	
+	ОтветHTTP = СоединениеHTTP.ОтправитьДляОбработки(ЗапросHTTP);
+	Если ОтветHTTP.КодСостояния <> 200 Тогда
+		Возврат Структура_error(ОтветHTTP, НСтр("ru='Конвертация контента'"));
+	КонецЕсли;
+	
+	ДанныеОтвета = СоответствиеИзОтвета(ОтветHTTP);
+	Возврат СвойствоСоответствия(ДанныеОтвета, "value", ""); //Структура_content(ДанныеОтвета, Настройки);
 КонецФункции
 
 #КонецОбласти
@@ -616,6 +800,8 @@
 	ДанныеВерсия		= СвойствоСоответствия(Соответствие, "version", Новый Соответствие);
 	ДанныеСсылки		= СвойствоСоответствия(Соответствие, "_links", Новый Соответствие);
 	
+	ЕстьПодчиненные = БулевоИзЗначения(Соответствие, "childTypes/page/value");
+	
 	Результат = Новый Структура;
 	Результат.Вставить("ИсходныеДанные"		, Соответствие);
 	Результат.Вставить("type"				, "content");
@@ -626,6 +812,8 @@
 	Результат.Вставить("Пространство"		, Структура_space(ДанныеПространство, Настройки));
 	Результат.Вставить("Версия"				, Структура_version(ДанныеВерсия));
 	Результат.Вставить("Ссылки"				, Структура_links(ДанныеСсылки));
+	Результат.Вставить("ЕстьПодчиненные"	, ЕстьПодчиненные);
+	Результат.Вставить("body_storage"		, СвойствоСоответствия(Соответствие, "body/storage/value", ""));
 	
 	Возврат Результат;
 КонецФункции
@@ -911,6 +1099,18 @@
 	КонецЦикла;
 КонецПроцедуры
 
+Функция ПолучитьНастройкуСодержимогоКонтента()
+	Возврат "childTypes.page,description.view,version,ancestors,space";
+КонецФункции
+
+Функция ПолучитьСтрокуJSON(знач ОбъектДанных)
+	ЗаписьJSON = Новый ЗаписьJSON;
+	ЗаписьJSON.УстановитьСтроку();
+	ЗаписьJSON.ПроверятьСтруктуру = Ложь;
+	ЗаписатьJSON(ЗаписьJSON, ОбъектДанных);
+	Возврат ЗаписьJSON.Закрыть();	
+КонецФункции
+
 Функция ПолучитьЗаголовки(знач Настройки)
 	Заголовки = Новый Соответствие;
 	Заголовки.Вставить("Content-Type", "application/json");
@@ -1081,6 +1281,11 @@
 		Возврат Дата(1, 1, 1);
 	КонецЕсли;
 	
+	ТипСвойства = ТипЗнч(ЗначениеСвойства);
+	Если ТипСвойства = Тип("Дата") Тогда
+		Возврат ЗначениеСвойства;
+	КонецЕсли;
+	
 	// "yyyy/MM/dd HH:mm" "yyyy-MM-dd HH:mm" "yyyy/MM/dd" "yyyy-MM-dd"
 	ЗначГод		= СтрокаВЧисло(Сред(ЗначениеСвойства, 1, 4));
 	ЗначМесяц	= СтрокаВЧисло(Сред(ЗначениеСвойства, 6, 2));
@@ -1097,6 +1302,11 @@
 		Возврат 0;
 	КонецЕсли;
 	
+	ТипСвойства = ТипЗнч(ЗначениеСвойства);
+	Если ТипСвойства = Тип("Число") Тогда
+		Возврат ЗначениеСвойства;
+	КонецЕсли;
+	
 	Возврат СтрокаВЧисло(ЗначениеСвойства);
 КонецФункции
 
@@ -1106,7 +1316,23 @@
 		Возврат Ложь;
 	КонецЕсли;
 	
+	ТипСвойства = ТипЗнч(ЗначениеСвойства);
+	Если ТипСвойства = Тип("Булево") Тогда
+		Возврат ЗначениеСвойства;
+	КонецЕсли;
+	
 	Возврат ?(ЗначениеСвойства = "true", Истина, Ложь);
+КонецФункции
+
+Функция АдресСсылкиИзЗначения(знач Соответствие, знач ПутьКлюча, знач ПутьКСерверу)
+	ЗначениеСвойства = СвойствоСоответствия(Соответствие, ПутьКлюча, Неопределено);
+	Если ЗначениеСвойства = Неопределено Тогда
+		Возврат "";
+	КонецЕсли;
+	
+	БезРазделителя = (СтрЗаканчиваетсяНа(ПутьКСерверу, "/") ИЛИ СтрНачинаетсяС(ЗначениеСвойства, "/"));
+	
+	Возврат ПутьКСерверу + ?(БезРазделителя, "", "/") + ЗначениеСвойства;
 КонецФункции
 
 Функция ЗначениеВСтрокуConfluence(знач ЗначениеСравнения)
@@ -1222,17 +1448,6 @@
 	КонецЕсли;
 	
 	Возврат "";
-КонецФункции
-
-Функция АдресСсылкиИзЗначения(знач Соответствие, знач ПутьКлюча, знач ПутьКСерверу)
-	ЗначениеСвойства = СвойствоСоответствия(Соответствие, ПутьКлюча, Неопределено);
-	Если ЗначениеСвойства = Неопределено Тогда
-		Возврат "";
-	КонецЕсли;
-	
-	БезРазделителя = (СтрЗаканчиваетсяНа(ПутьКСерверу, "/") ИЛИ СтрНачинаетсяС(ЗначениеСвойства, "/"));
-	
-	Возврат ПутьКСерверу + ?(БезРазделителя, "", "/") + ЗначениеСвойства;
 КонецФункции
 
 Функция СтрокаВЧисло(знач СтрЗначение)
