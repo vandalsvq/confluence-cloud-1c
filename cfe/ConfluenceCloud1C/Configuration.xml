@@ -72,6 +72,7 @@
 			<CommonModule>confluence_ApiClientServerReuse</CommonModule>
 			<Enum>confluence_ТипыДанных</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
+			<DataProcessor>confluence_Навигатор</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
