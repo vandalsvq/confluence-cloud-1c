@@ -1,4 +1,6 @@
 ﻿
+#Область confluence_ApiClientServerReuse
+
 &НаКлиентеНаСервереБезКонтекста
 Процедура confluence_ApiClientServerReuse_content_types(Форма)
 	ИмяТеста = "confluence_ApiClientServerReuse.content_types";
@@ -35,6 +37,38 @@
 	КонецЕсли;
 КонецПроцедуры
 
+&НаКлиентеНаСервереБезКонтекста
+Процедура confluence_ApiClientServerReuse_content_status(Форма)
+	ИмяТеста1 = "confluence_ApiClientServerReuse.content_status(Истина)";
+	ИмяТеста2 = "confluence_ApiClientServerReuse.content_status(Ложь)";
+	
+	Контроль1 = Новый Структура("удален,устарел,черновик,текущий,любой",
+		"trashed", "historical", "draft", "current", "any");
+	Контроль2 = Новый Структура("trashed,historical,draft,current,any",
+		"удален", "устарел", "черновик", "текущий", "любой");
+	
+	Результат1 = confluence_ApiClientServerReuse.content_status(Истина);
+	Результат2 = confluence_ApiClientServerReuse.content_status(Ложь);
+	
+	Если НЕ ТипЗнч(Результат1) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста1, "Возвращаемый тип не структура (вариант 1)");
+	Иначе
+		РезультатСравнения = СтруктурыРавны(Результат1, Контроль1);
+		ЗафиксироватьРезультат(Форма, ИмяТеста1, РезультатСравнения);
+	КонецЕсли;
+	
+	Если НЕ ТипЗнч(Результат2) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста2, "Возвращаемый тип не структура (вариант 2)");
+	Иначе
+		РезультатСравнения = СтруктурыРавны(Результат2, Контроль2);
+		ЗафиксироватьРезультат(Форма, ИмяТеста2, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
+#КонецОбласти 
+
+#Область confluence_ApiClientServer
+
 &НаКлиентеНаСервереБезКонтекста 
 Процедура confluence_ApiClientServer_get_connection_settings(Форма)
 	ИмяТеста = "confluence_ApiClientServer.get_connection_settings";
@@ -63,7 +97,7 @@
 Процедура confluence_ApiClientServer_get_all_spaces_params(Форма)
 	ИмяТеста = "confluence_ApiClientServer.get_all_spaces_params";
 	
-	СписокСвойств = "Общие,Действующие,Метка,Избранное,Начало,Количество,Информация";
+	СписокСвойств = "Общие,Действующие,Метка,Избранное,Начало,Количество";
 	
 	Результат = confluence_ApiClientServer.get_all_spaces_params();
 	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
@@ -74,14 +108,33 @@
 	КонецЕсли;
 КонецПроцедуры
 
+&НаКлиентеНаСервереБезКонтекста 
+Процедура confluence_ApiClientServer_get_all_pages_from_space_params(Форма)
+	ИмяТеста = "confluence_ApiClientServer.get_all_pages_from_space_params";
+	
+	СписокСвойств = "Статус,Начало,Количество,Сортировка";
+	
+	Результат = confluence_ApiClientServer.get_all_pages_from_space_params();
+	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
+	Иначе
+		РезультатСравнения = СвойстваСуществуют(Результат, СписокСвойств);
+		ЗафиксироватьРезультат(Форма, ИмяТеста, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
+#КонецОбласти 
+
 &НаКлиенте 
 Функция ЗаполнитьСписокТестов()
 	ДобавитьТест("confluence_ApiClientServerReuse", "content_types");
+	ДобавитьТест("confluence_ApiClientServerReuse", "content_status");
 	ДобавитьТест("confluence_ApiClientServerReuse", "url_params");
+	
 	ДобавитьТест("confluence_ApiClientServer", "get_connection_settings");
 	ДобавитьТест("confluence_ApiClientServer", "get_all_spaces_params");
-	ДобавитьТест("", "");
-	ДобавитьТест("", "");
+	ДобавитьТест("confluence_ApiClientServer", "get_all_pages_from_space_params");
+	
 	ДобавитьТест("", "");
 	ДобавитьТест("", "");
 	ДобавитьТест("", "");
