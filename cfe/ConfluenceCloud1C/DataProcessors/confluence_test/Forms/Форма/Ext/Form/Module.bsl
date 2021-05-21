@@ -123,6 +123,21 @@
 	КонецЕсли;
 КонецПроцедуры
 
+&НаКлиентеНаСервереБезКонтекста 
+Процедура confluence_ApiClientServer_get_page_child_by_type_params(Форма)
+	ИмяТеста = "confluence_ApiClientServer.get_page_child_by_type_params";
+	
+	СписокСвойств = "Начало,Количество";
+	
+	Результат = confluence_ApiClientServer.get_page_child_by_type_params();
+	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
+	Иначе
+		РезультатСравнения = СвойстваСуществуют(Результат, СписокСвойств);
+		ЗафиксироватьРезультат(Форма, ИмяТеста, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
 #КонецОбласти 
 
 &НаКлиенте 
@@ -134,8 +149,8 @@
 	ДобавитьТест("confluence_ApiClientServer", "get_connection_settings");
 	ДобавитьТест("confluence_ApiClientServer", "get_all_spaces_params");
 	ДобавитьТест("confluence_ApiClientServer", "get_all_pages_from_space_params");
+	ДобавитьТест("confluence_ApiClientServer", "get_page_child_by_type_params");
 	
-	ДобавитьТест("", "");
 	ДобавитьТест("", "");
 	ДобавитьТест("", "");
 	ДобавитьТест("", "");
