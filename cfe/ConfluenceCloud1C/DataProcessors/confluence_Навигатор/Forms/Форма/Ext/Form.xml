@@ -243,6 +243,13 @@
 									<ContextMenu name="СтраницыСтатусКонтекстноеМеню" id="72"/>
 									<ExtendedTooltip name="СтраницыСтатусРасширеннаяПодсказка" id="73"/>
 								</InputField>
+								<CheckBoxField name="СтраницыЕстьПодчиненные" id="94">
+									<DataPath>Страницы.ЕстьПодчиненные</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СтраницыЕстьПодчиненныеКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="СтраницыЕстьПодчиненныеРасширеннаяПодсказка" id="96"/>
+								</CheckBoxField>
 								<InputField name="СтраницыПространствоКлюч" id="77">
 									<DataPath>Страницы.ПространствоКлюч</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -607,6 +614,17 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЕстьПодчиненные" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть подчиненные</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>

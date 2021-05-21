@@ -76,12 +76,9 @@
 	
 	НастройкиПодключения	= confluence_ApiClientServer.get_connection_settings(Объект.АдресСервера);
 	ПараметрыЗапроса		= confluence_ApiClientServer.get_page_child_by_type_params(0, 0);
-	ТипДанныхКонтента		= ПредопределенноеЗначение("Перечисление.confluence_ТипыДанных.Статья");
 	
-	РезультатЗапроса = confluence_ApiClientServer.get_page_child_by_type(НастройкиПодключения,
-		ТекущиеДанные.ДомашняяСтраницаИдентификатор,
-		ТипДанныхКонтента,
-		ПараметрыЗапроса);
+	РезультатЗапроса = confluence_ApiClientServer.get_child_pages(НастройкиПодключения,
+		ТекущиеДанные.ДомашняяСтраницаИдентификатор);
 		
 	Если confluence_ApiClientServer.check_error(РезультатЗапроса, Истина) Тогда
 		Возврат;
