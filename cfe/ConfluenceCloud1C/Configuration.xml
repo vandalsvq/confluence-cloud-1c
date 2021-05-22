@@ -98,7 +98,7 @@
 			<Enum>confluence_ТипыДанных</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
 			<DataProcessor>confluence_Навигатор</DataProcessor>
-			<DataProcessor>confluence_Демо</DataProcessor>
+			<DataProcessor>confluence_БазаЗнаний</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

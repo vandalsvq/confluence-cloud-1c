@@ -22,7 +22,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_ApiClientServer</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_test</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_Навигатор</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_Демо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_БазаЗнаний</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
