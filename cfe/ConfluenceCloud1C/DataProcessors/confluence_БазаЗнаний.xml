@@ -102,21 +102,20 @@
 			</Attribute>
 			<Attribute uuid="6e89f87b-8557-4aa9-afc6-29a4667cbe14">
 				<Properties>
-					<Name>ИдентификаторРаздела</Name>
+					<Name>КлючПространства</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор раздела</v8:content>
+							<v8:content>Ключ пространства</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>20</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -128,7 +127,7 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -194,7 +193,7 @@
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="3b74c8ab-60ca-4e02-a226-1e67438c4edb">
@@ -242,6 +241,10 @@
 			<Form>Форма</Form>
 			<Form>ФормаПросмотраКартинок</Form>
 			<Form>ФормаНастройки</Form>
+			<Template>НачальнаяСтраница</Template>
+			<Template>МакетРезультатПоиска</Template>
+			<Template>СтрокаРезультатПоиска</Template>
+			<Template>СовпаденийНеНайдено</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

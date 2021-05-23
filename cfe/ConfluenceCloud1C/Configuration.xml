@@ -96,6 +96,7 @@
 			<CommonModule>confluence_ApiClientServer</CommonModule>
 			<CommonModule>confluence_ApiClientServerReuse</CommonModule>
 			<Enum>confluence_ТипыДанных</Enum>
+			<Enum>confluence_ПоляCQL</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
 			<DataProcessor>confluence_Навигатор</DataProcessor>
 			<DataProcessor>confluence_БазаЗнаний</DataProcessor>
