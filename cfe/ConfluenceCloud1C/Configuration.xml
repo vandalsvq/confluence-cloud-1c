@@ -95,6 +95,7 @@
 			<Role>confluence_ОсновнаяРоль</Role>
 			<CommonModule>confluence_ApiClientServer</CommonModule>
 			<CommonModule>confluence_ApiClientServerReuse</CommonModule>
+			<Constant>confluence_НастройкиБазыЗнаний</Constant>
 			<Enum>confluence_ТипыДанных</Enum>
 			<Enum>confluence_ПоляCQL</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
