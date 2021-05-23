@@ -13,7 +13,10 @@
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<Explanation/>
-			<Picture/>
+			<Picture>
+				<xr:Ref>CommonPicture.confluence_Логотип</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.confluence_ОсновнаяРоль</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.confluence_Логотип</xr:Item>
@@ -22,7 +25,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_ApiClientServer</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_test</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_Навигатор</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_Демо</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_БазаЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.confluence_ПоляCQL</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
