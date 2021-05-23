@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.confluence_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>Анисков Александр Александрович</Vendor>
-			<Version>1.0.0.1</Version>
+			<Version>1.0.1.0</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
