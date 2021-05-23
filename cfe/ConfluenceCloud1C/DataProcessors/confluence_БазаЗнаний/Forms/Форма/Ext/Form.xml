@@ -21,22 +21,53 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="ИдентификаторРаздела" id="1">
-			<DataPath>Объект.ИдентификаторРаздела</DataPath>
+		<UsualGroup name="ГруппаИдентификаторРазделаСтраницы" id="45">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Раздел</v8:content>
+					<v8:content>Группа идентификатор раздела страницы</v8:content>
 				</v8:item>
 			</Title>
-			<Width>25</Width>
-			<ListChoiceMode>true</ListChoiceMode>
-			<ContextMenu name="ИдентификаторРазделаКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ИдентификаторРазделаРасширеннаяПодсказка" id="3"/>
-			<Events>
-				<Event name="OnChange">ИдентификаторРазделаПриИзменении</Event>
-			</Events>
-		</InputField>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа идентификатор раздела страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИдентификаторРазделаСтраницыРасширеннаяПодсказка" id="46"/>
+			<ChildItems>
+				<InputField name="ИдентификаторРаздела" id="1">
+					<DataPath>Объект.ИдентификаторРаздела</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раздел</v8:content>
+						</v8:item>
+					</Title>
+					<Width>25</Width>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ИдентификаторРазделаКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ИдентификаторРазделаРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ИдентификаторРазделаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ИдентификаторСтраницы" id="42">
+					<DataPath>1/0:391a4dac-98a7-4de9-bcdf-c3994b0f312f</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница</v8:content>
+						</v8:item>
+					</Title>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ContextMenu name="ИдентификаторСтраницыКонтекстноеМеню" id="43"/>
+					<ExtendedTooltip name="ИдентификаторСтраницыРасширеннаяПодсказка" id="44"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаГоризонтальная" id="23">
 			<Title>
 				<v8:item>
