@@ -123,6 +123,21 @@
 КонецПроцедуры
 
 &НаКлиентеНаСервереБезКонтекста 
+Процедура confluence_ApiClientServer_get_page_content_params(Форма)
+	ИмяТеста = "confluence_ApiClientServer.get_page_content_params";
+	
+	СписокСвойств = "Контент";
+	
+	Результат = confluence_ApiClientServer.get_page_content_params();
+	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
+	Иначе
+		РезультатСравнения = СвойстваСуществуют(Результат, СписокСвойств);
+		ЗафиксироватьРезультат(Форма, ИмяТеста, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста 
 Процедура confluence_ApiClientServer_get_all_spaces_params(Форма)
 	ИмяТеста = "confluence_ApiClientServer.get_all_spaces_params";
 	
@@ -141,7 +156,7 @@
 Процедура confluence_ApiClientServer_get_all_pages_from_space_params(Форма)
 	ИмяТеста = "confluence_ApiClientServer.get_all_pages_from_space_params";
 	
-	СписокСвойств = "Статус,Начало,Количество,Сортировка";
+	СписокСвойств = "Статус,Начало,Количество,Сортировка,Контент";
 	
 	Результат = confluence_ApiClientServer.get_all_pages_from_space_params();
 	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
@@ -156,7 +171,7 @@
 Процедура confluence_ApiClientServer_get_page_child_by_type_params(Форма)
 	ИмяТеста = "confluence_ApiClientServer.get_page_child_by_type_params";
 	
-	СписокСвойств = "Начало,Количество";
+	СписокСвойств = "Начало,Количество,Контент";
 	
 	Результат = confluence_ApiClientServer.get_page_child_by_type_params();
 	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
@@ -171,9 +186,54 @@
 Процедура confluence_ApiClientServer_get_space_content_params(Форма)
 	ИмяТеста = "confluence_ApiClientServer.get_space_content_params";
 	
-	СписокСвойств = "Начало,Количество,ВсеСтраницы,ПолучитьКонтент";
+	СписокСвойств = "Начало,Количество,ВсеСтраницы,Контент";
 	
 	Результат = confluence_ApiClientServer.get_space_content_params();
+	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
+	Иначе
+		РезультатСравнения = СвойстваСуществуют(Результат, СписокСвойств);
+		ЗафиксироватьРезультат(Форма, ИмяТеста, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста 
+Процедура confluence_ApiClientServer_get_attachments_from_content_params(Форма)
+	ИмяТеста = "confluence_ApiClientServer.get_attachments_from_content_params";
+	
+	СписокСвойств = "Начало,Количество,ИмяФайла,Контент";
+	
+	Результат = confluence_ApiClientServer.get_attachments_from_content_params();
+	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
+	Иначе
+		РезультатСравнения = СвойстваСуществуют(Результат, СписокСвойств);
+		ЗафиксироватьРезультат(Форма, ИмяТеста, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста 
+Процедура confluence_ApiClientServer_start_limit_params(Форма)
+	ИмяТеста = "confluence_ApiClientServer.start_limit_params";
+	
+	СписокСвойств = "Начало,Количество";
+	
+	Результат = confluence_ApiClientServer.start_limit_params();
+	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
+		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
+	Иначе
+		РезультатСравнения = СвойстваСуществуют(Результат, СписокСвойств);
+		ЗафиксироватьРезультат(Форма, ИмяТеста, РезультатСравнения);
+	КонецЕсли;
+КонецПроцедуры
+
+&НаКлиентеНаСервереБезКонтекста 
+Процедура confluence_ApiClientServer_content_expand_param(Форма)
+	ИмяТеста = "confluence_ApiClientServer.content_expand_param";
+	
+	СписокСвойств = "body_storage,body_styled_view,children_attachments";
+	
+	Результат = confluence_ApiClientServer.content_expand_param();
 	Если НЕ ТипЗнч(Результат) = Тип("Структура") Тогда
 		ЗафиксироватьРезультат(Форма, ИмяТеста, "Возвращаемый тип не структура");
 	Иначе
@@ -239,10 +299,15 @@
 	ДобавитьТест("confluence_ApiClientServerReuse", "cql_fields_params");
 	
 	ДобавитьТест("confluence_ApiClientServer", "get_connection_settings");
+	ДобавитьТест("confluence_ApiClientServer", "get_page_content_params");
 	ДобавитьТест("confluence_ApiClientServer", "get_all_spaces_params");
 	ДобавитьТест("confluence_ApiClientServer", "get_all_pages_from_space_params");
 	ДобавитьТест("confluence_ApiClientServer", "get_page_child_by_type_params");
 	ДобавитьТест("confluence_ApiClientServer", "get_space_content_params");
+	ДобавитьТест("confluence_ApiClientServer", "get_attachments_from_content_params");
+	ДобавитьТест("confluence_ApiClientServer", "start_limit_params");
+	ДобавитьТест("confluence_ApiClientServer", "content_expand_param");
+	
 	ДобавитьТест("confluence_ApiClientServer", "get_cql_operator_text");
 	
 	ДобавитьТест("", "");
