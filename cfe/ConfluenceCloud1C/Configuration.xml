@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.confluence_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>Анисков Александр Александрович</Vendor>
-			<Version>1.0.1.2</Version>
+			<Version>1.0.1.3</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -93,6 +93,7 @@
 			<Subsystem>confluence_ИнтеграцияConfluenceCloud</Subsystem>
 			<CommonPicture>confluence_Логотип</CommonPicture>
 			<Role>confluence_ОсновнаяРоль</Role>
+			<Role>confluence_Администратор</Role>
 			<CommonModule>confluence_ApiClientServer</CommonModule>
 			<CommonModule>confluence_ApiClientServerReuse</CommonModule>
 			<CommonModule>confluence_FileSystemAsync</CommonModule>
