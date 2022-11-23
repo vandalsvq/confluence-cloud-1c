@@ -15,17 +15,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.confluence_test</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Configuration.ConfluenceCloud1C</name>
 		<right>
 			<name>MainWindowModeNormal</name>
@@ -71,13 +60,21 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.confluence_Навигатор</name>
+		<name>InformationRegister.confluence_ИзбранныеСтатьи</name>
 		<right>
-			<name>Use</name>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
