@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
-			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<Explanation/>
 			<Picture>
 				<xr:Ref>CommonPicture.confluence_Логотип</xr:Ref>
@@ -23,13 +23,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.confluence_ТипыДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_ApiClientServerReuse</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_ApiClientServer</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_test</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_Навигатор</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_БазаЗнаний</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.confluence_ПоляCQL</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.confluence_Администратор</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.confluence_Ожидание16</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.confluence_Успешно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.confluence_Файлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.confluence_ИзбранныеСтатьи</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

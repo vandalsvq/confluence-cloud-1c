@@ -52,9 +52,10 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.confluence_ОсновнаяРоль</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.confluence_Администратор</xr:Item>
 			</DefaultRoles>
 			<Vendor>Анисков Александр Александрович</Vendor>
-			<Version>1.0.2.1</Version>
+			<Version>1.0.2.3</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -94,17 +95,20 @@
 			<CommonPicture>confluence_Логотип</CommonPicture>
 			<CommonPicture>confluence_Ожидание16</CommonPicture>
 			<CommonPicture>confluence_Успешно</CommonPicture>
+			<CommonPicture>confluence_Файлы</CommonPicture>
 			<Role>confluence_ОсновнаяРоль</Role>
 			<Role>confluence_Администратор</Role>
 			<CommonModule>confluence_ApiClientServer</CommonModule>
 			<CommonModule>confluence_ApiClientServerReuse</CommonModule>
 			<CommonModule>confluence_FileSystemAsync</CommonModule>
 			<Constant>confluence_НастройкиБазыЗнаний</Constant>
+			<Catalog>Пользователи</Catalog>
 			<Enum>confluence_ТипыДанных</Enum>
 			<Enum>confluence_ПоляCQL</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
 			<DataProcessor>confluence_Навигатор</DataProcessor>
 			<DataProcessor>confluence_БазаЗнаний</DataProcessor>
+			<InformationRegister>confluence_ИзбранныеСтатьи</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
