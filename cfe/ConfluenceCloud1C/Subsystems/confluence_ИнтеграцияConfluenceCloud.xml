@@ -32,6 +32,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.confluence_ИзбранныеСтатьи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_CommonClientServer</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.confluence_БазыЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.confluence_БазаЗнаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.confluence_ПоискПоОбъекту</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
