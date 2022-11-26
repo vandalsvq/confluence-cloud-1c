@@ -351,6 +351,7 @@
 			<Form>Форма</Form>
 			<Form>ФормаПросмотраКартинок</Form>
 			<Form>ФормаНастройки</Form>
+			<Form>ФормаЭкспортаПространствНаСервере</Form>
 			<Template>НачальнаяСтраница</Template>
 			<Template>МакетРезультатПоиска</Template>
 			<Template>СтрокаРезультатПоиска</Template>

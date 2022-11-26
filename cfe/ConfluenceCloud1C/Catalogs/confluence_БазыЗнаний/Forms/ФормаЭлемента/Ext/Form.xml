@@ -38,6 +38,9 @@
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
@@ -93,6 +96,9 @@
 					<Width>20</Width>
 					<ContextMenu name="ПользовательЛогинКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ПользовательЛогинРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ПользовательЛогинПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="ПользовательТокен" id="29">
 					<DataPath>ПользовательТокен</DataPath>
@@ -114,6 +120,9 @@
 							</v8:item>
 						</Title>
 					</ExtendedTooltip>
+					<Events>
+						<Event name="OnChange">ПользовательТокенПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
