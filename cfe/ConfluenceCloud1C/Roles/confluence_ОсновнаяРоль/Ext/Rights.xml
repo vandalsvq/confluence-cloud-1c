@@ -64,6 +64,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonCommand.confluence_ПоискПоОбъекту</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.confluence_ИзбранныеСтатьи</name>
 		<right>
 			<name>Read</name>
