@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаОткрытьНастройки" id="40">
@@ -60,6 +60,12 @@
 					</Button>
 				</ChildItems>
 			</Popup>
+			<Button name="ФормаВыводитьСостояниеЗагрузкиКартинок" id="261">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыводитьСостояниеЗагрузкиКартинок</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаВыводитьСостояниеЗагрузкиКартинокРасширеннаяПодсказка" id="262"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -185,17 +191,90 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаСодержаниеРасширеннаяПодсказка" id="119"/>
 									<ChildItems>
-										<LabelDecoration name="ДекорацияСодержание" id="162">
-											<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
-											<Title formatted="false">
+										<UsualGroup name="ГруппаСодержаниеГитхаб" id="263">
+											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Содержание</v8:content>
+													<v8:content>Группа содержание гитхаб</v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="ДекорацияСодержаниеКонтекстноеМеню" id="163"/>
-											<ExtendedTooltip name="ДекорацияСодержаниеРасширеннаяПодсказка" id="164"/>
-										</LabelDecoration>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа содержание гитхаб</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalAlign>Center</VerticalAlign>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСодержаниеГитхабРасширеннаяПодсказка" id="264"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияСодержание" id="162">
+													<Font ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Содержание</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияСодержаниеКонтекстноеМеню" id="163"/>
+													<ExtendedTooltip name="ДекорацияСодержаниеРасширеннаяПодсказка" id="164"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаГитхаб" id="268">
+													<EnableContentChange>true</EnableContentChange>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа гитхаб</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа гитхаб</v8:content>
+														</v8:item>
+													</ToolTip>
+													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаГитхабРасширеннаяПодсказка" id="269"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаГитхаб" id="265">
+															<Width>2</Width>
+															<Height>1</Height>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка гитхаб</v8:content>
+																</v8:item>
+															</Title>
+															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+															<PictureSize>Proportionally</PictureSize>
+															<Picture>
+																<xr:Ref>CommonPicture.confluence_Github</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаГитхабКонтекстноеМеню" id="266"/>
+															<ExtendedTooltip name="КартинкаГитхабРасширеннаяПодсказка" id="267"/>
+														</PictureDecoration>
+														<LabelDecoration name="СсылкаГитхаб" id="270">
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;link https://github.com/vandalsvq/confluence-cloud-1c&gt;Github&lt;/&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СсылкаГитхабКонтекстноеМеню" id="271"/>
+															<ExtendedTooltip name="СсылкаГитхабРасширеннаяПодсказка" id="272"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="ГруппаСодержание" id="25">
 											<Title>
 												<v8:item>
@@ -1267,6 +1346,7 @@
 											<ContextMenu name="ПолеHTMLКонтекстноеМеню" id="28"/>
 											<ExtendedTooltip name="ПолеHTMLРасширеннаяПодсказка" id="29"/>
 											<Events>
+												<Event name="DocumentComplete">ПолеHTMLДокументСформирован</Event>
 												<Event name="OnClick">ПолеHTMLПриНажатии</Event>
 											</Events>
 										</HTMLDocumentField>
@@ -1564,6 +1644,17 @@
 							<v8:Length>20</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="АнонимныйДоступ" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Анонимный доступ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -2311,6 +2402,17 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="КартинкиОбработаны" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинки обработаны</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОткрытьНастройкиПользователя" id="1">
@@ -2569,6 +2671,25 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЭкспортПространстваВPDF</Action>
+		</Command>
+		<Command name="ВыводитьСостояниеЗагрузкиКартинок" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прогресс загрузки картинок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить состояние загрузки картинок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.confluence_Ожидание16</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыводитьСостояниеЗагрузкиКартинок</Action>
 		</Command>
 	</Commands>
 	<Parameters>
