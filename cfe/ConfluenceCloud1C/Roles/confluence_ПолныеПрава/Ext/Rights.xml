@@ -1,10 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.13">
+<Rights xmlns="http://v8.1c.ru/8.2/roles" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Rights" version="2.16">
 	<setForNewObjects>true</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
 		<name>Configuration.ConfluenceCloud1C</name>
+		<right>
+			<name>Administration</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>DataAdministration</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>UpdateDataBaseConfiguration</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ExclusiveMode</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ActiveUsers</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>EventLog</name>
+			<value>false</value>
+		</right>
 		<right>
 			<name>ThinClient</name>
 			<value>true</value>
@@ -16,6 +40,26 @@
 		<right>
 			<name>MobileClient</name>
 			<value>true</value>
+		</right>
+		<right>
+			<name>ThickClient</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>ExternalConnection</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Automation</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>TechnicalSpecialistMode</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>CollaborationSystemInfoBaseRegistration</name>
+			<value>false</value>
 		</right>
 		<right>
 			<name>MainWindowModeNormal</name>
@@ -42,8 +86,24 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>ExclusiveModeTerminationAtSessionStart</name>
+			<value>false</value>
+		</right>
+		<right>
 			<name>SaveUserData</name>
 			<value>true</value>
+		</right>
+		<right>
+			<name>ConfigurationExtensionsAdministration</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveOpenExtDataProcessors</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>InteractiveOpenExtReports</name>
+			<value>false</value>
 		</right>
 		<right>
 			<name>Output</name>
