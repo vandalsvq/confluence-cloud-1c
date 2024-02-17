@@ -44,6 +44,12 @@
 			<ChildItems>
 				<InputField name="АдресСервера" id="1">
 					<DataPath>Объект.АдресСервера</DataPath>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://your-name.atlassian.net/</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="АдресСервераКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="АдресСервераРасширеннаяПодсказка" id="3"/>
 					<Events>

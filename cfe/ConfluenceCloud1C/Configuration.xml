@@ -47,7 +47,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_12</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>Анисков Александр Александрович</Vendor>
-			<Version>1.0.3.2</Version>
+			<Version>1.0.3.3</Version>
 			<BriefInformation>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -103,8 +103,9 @@
 			<Enum>confluence_ТипыДанных</Enum>
 			<Enum>confluence_ПоляCQL</Enum>
 			<DataProcessor>confluence_test</DataProcessor>
-			<DataProcessor>confluence_Навигатор</DataProcessor>
 			<DataProcessor>confluence_БазаЗнаний</DataProcessor>
+			<DataProcessor>confluence_Навигатор</DataProcessor>
+			<DataProcessor>confluence_ПоискСтраницы</DataProcessor>
 			<InformationRegister>confluence_ИзбранныеСтатьи</InformationRegister>
 		</ChildObjects>
 	</Configuration>

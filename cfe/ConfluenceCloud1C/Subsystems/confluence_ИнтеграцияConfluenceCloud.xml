@@ -40,6 +40,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_Objects</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.confluence_ServerCall</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.confluence_Github</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.confluence_ПоискСтраницы</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
