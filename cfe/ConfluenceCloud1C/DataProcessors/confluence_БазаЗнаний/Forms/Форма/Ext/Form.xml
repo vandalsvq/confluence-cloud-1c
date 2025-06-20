@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаОткрытьНастройки" id="40">
@@ -88,7 +88,6 @@
 					<v8:content>Группа идентификатор раздела страницы</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИдентификаторРазделаСтраницыРасширеннаяПодсказка" id="46"/>
@@ -136,7 +135,6 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
-			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="24"/>
@@ -155,7 +153,6 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЛеваяСторонаРасширеннаяПодсказка" id="123"/>
@@ -206,7 +203,6 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<VerticalAlign>Center</VerticalAlign>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСодержаниеГитхабРасширеннаяПодсказка" id="264"/>
@@ -238,7 +234,6 @@
 													</ToolTip>
 													<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 													<Group>AlwaysHorizontal</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаГитхабРасширеннаяПодсказка" id="269"/>
@@ -290,7 +285,6 @@
 											</ToolTip>
 											<Width>30</Width>
 											<Group>Vertical</Group>
-											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСодержаниеРасширеннаяПодсказка" id="26"/>
 											<ChildItems>
@@ -403,7 +397,6 @@
 													<v8:content>Группа поиск</v8:content>
 												</v8:item>
 											</ToolTip>
-											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<BackColor>web:AliceBlue</BackColor>
 											<ExtendedTooltip name="ГруппаПоискРасширеннаяПодсказка" id="48"/>
@@ -571,7 +564,6 @@
 															<v8:content>Группа поиск только по заголовкам</v8:content>
 														</v8:item>
 													</ToolTip>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПоискТолькоПоЗаголовкамРасширеннаяПодсказка" id="112"/>
@@ -605,7 +597,6 @@
 															<v8:content>Группа поиск внутри текущей иерархии</v8:content>
 														</v8:item>
 													</ToolTip>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПоискВнутриТекущейИерархииРасширеннаяПодсказка" id="97"/>
@@ -640,7 +631,6 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаСозданоРасширеннаяПодсказка" id="59"/>
@@ -755,7 +745,6 @@
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
 															<VerticalAlign>Center</VerticalAlign>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаДатаСозданияРасширеннаяПодсказка" id="64"/>
@@ -802,7 +791,6 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
-													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаИзмененоРасширеннаяПодсказка" id="75"/>
@@ -916,7 +904,6 @@
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
-															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаДатаИзмененияРасширеннаяПодсказка" id="80"/>
@@ -966,7 +953,6 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<VerticalAlign>Center</VerticalAlign>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="99"/>
@@ -1146,7 +1132,6 @@
 							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-							<Behavior>Usual</Behavior>
 							<ShowTitle>false</ShowTitle>
 							<BackColor>web:Gainsboro</BackColor>
 							<ExtendedTooltip name="ГруппаФормаВРежимеОтладкиРасширеннаяПодсказка" id="110"/>
@@ -1183,7 +1168,6 @@
 					</ToolTip>
 					<Width>50</Width>
 					<Group>Vertical</Group>
-					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДанныеСтатьиРасширеннаяПодсказка" id="31"/>
@@ -1203,7 +1187,6 @@
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
 							<VerticalAlign>Center</VerticalAlign>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПредставлениеСтраницыРасширеннаяПодсказка" id="176"/>
@@ -1262,6 +1245,11 @@
 									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 									<ExtendedTooltip name="ГруппаКоманднаяПанельHTMLРасширеннаяПодсказка" id="181"/>
 									<ChildItems>
+										<Button name="ОткрытьСсылку" id="275">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ОткрытьСсылку</CommandName>
+											<ExtendedTooltip name="ОткрытьСсылкуРасширеннаяПодсказка" id="276"/>
+										</Button>
 										<Popup name="ФормаГруппаСохранитьКак" id="169">
 											<Title>
 												<v8:item>
@@ -1317,7 +1305,6 @@
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
-							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДанныеГоризонтальнаяРасширеннаяПодсказка" id="185"/>
@@ -1335,7 +1322,6 @@
 											<v8:content>Группа поле HTML</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПолеHTMLРасширеннаяПодсказка" id="187"/>
@@ -1369,7 +1355,6 @@
 												</v8:item>
 											</ToolTip>
 											<Group>AlwaysHorizontal</Group>
-											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСлужебныеДанныеРасширеннаяПодсказка" id="243"/>
@@ -1420,7 +1405,6 @@
 									</ToolTip>
 									<Width>40</Width>
 									<HorizontalStretch>false</HorizontalStretch>
-									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаВложенияРасширеннаяПодсказка" id="189"/>
@@ -1474,6 +1458,9 @@
 												<ContextMenu name="ВложенияУправлениеПоискомКонтекстноеМеню" id="201"/>
 												<ExtendedTooltip name="ВложенияУправлениеПоискомРасширеннаяПодсказка" id="202"/>
 											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">ВложенияВыбор</Event>
+											</Events>
 											<ChildItems>
 												<ColumnGroup name="ВложенияГруппаКартинкаЗаголовок" id="218">
 													<Title>
@@ -2690,6 +2677,25 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ВыводитьСостояниеЗагрузкиКартинок</Action>
+		</Command>
+		<Command name="ОткрытьСсылку" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ссылку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ссылку во браузере</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GotoExternalURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьСсылку</Action>
 		</Command>
 	</Commands>
 	<Parameters>
